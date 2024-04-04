@@ -1,12 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Body from './Components/Body';
+import Head from './Components/Head';
+import Sidebar from './Components/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <header className="text-3xl">
-        helloooooooooooooooooooooooooooo
-      </header>
+      <Head/>
+      <div className='flex'>
+        <Sidebar/>
+        <Body/>
+      </div>
     </div>
   );
 }
